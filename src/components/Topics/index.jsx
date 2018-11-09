@@ -6,7 +6,7 @@ export class Topics extends React.Component {
     render() {
         return <div>
             <h2>Topics</h2>
-            <ul className='nav'>
+            <ul className='nav   nav-pills'>
                 <li className='nav-item'>
                     <NavLink className='nav-link' to={`${this.props.match.url}/components`}>Components</NavLink>
                 </li>

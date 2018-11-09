@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
-import {NestedRouting} from './components/nested-routing'
-
-class App extends Component {
+import { AppContainer } from 'react-hot-loader';
+import { BrowserRouter } from 'react-router-dom';
+import { routes } from './routes/index';
+ 
+export class App extends Component {
   render() {
     return (
-      <NestedRouting/>
+      <AppContainer>
+        <BrowserRouter children={routes} basename={'/'} />
+      </AppContainer>
     );
   }
 }
-
-export default App;
