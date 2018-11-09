@@ -2,8 +2,6 @@ import * as React from 'react';
 import { NavLink } from 'react-router-dom';
 
 export class NavMenu extends React.Component {
-
-
     render() {
         return <div className="container">
             <div className='nav flex-column nav-pills'>

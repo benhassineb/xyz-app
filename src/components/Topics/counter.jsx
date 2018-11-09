@@ -1,18 +1,18 @@
 import * as React from 'react';
- import { connect } from 'react-redux';
- import * as CounterStore from '../../redux/actions';
+import { connect } from 'react-redux';
+import * as CounterStore from '../../redux/actions';
 
 
 class Counter extends React.Component {
-     render() {
+    render() {
         return <div>
             <h1>Counter</h1>
 
             <p>This is a simple example of a React component.</p>
 
-            <p>Current count: <strong>{ this.props.count }</strong></p>
+            <p>Current count: <strong>{this.props.count}</strong></p>
 
-            <button onClick={ () => { this.props.increment() } }>Increment</button>
+            <button onClick={() => { this.props.increment() }}>Increment</button>
         </div>;
     }
 }
